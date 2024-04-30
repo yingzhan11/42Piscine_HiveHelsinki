@@ -25,7 +25,8 @@ int	main(int argc, char **argv)
 	int		*clues;
 
 	initialize_grid(grid, 0);
-	clues = malloc(64);
+	clues = malloc(64); 
+	//if the malloc success or nor need to be check here, we forgot this so we failed.
 	if (if_valid_input(argc, argv) == 0)
 	{
 		ft_putstr("Error\n");
